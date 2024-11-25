@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:test_bench/pages/home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,10 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Text("Home"),
+        body: SafeArea(
+            child:
+                Padding(padding: const EdgeInsets.all(20), child: HomePage())),
       ),
     );
   }
