@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
           flex: 1,
           child: // charging box
               ChargingDischarging(
-            status: true,
+            status: false,
             label: 'Current Status',
             primaryColor: AppColors().primaryAccent,
             primaryDeepColor: AppColors().primaryDeep,
