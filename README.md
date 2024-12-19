@@ -22,6 +22,16 @@ This repo contains a flutter linux app supporting linux installation and python 
 ![image](https://github.com/user-attachments/assets/f0f7766c-f318-4838-8f7a-1a292396da99)
 ![image](https://github.com/user-attachments/assets/4be850b1-27f8-443a-a5cc-90f9951b10a3)
 
+## Project structure
+---
+1. Test bench Operation plans:
+<br>
+![image](https://www.canva.com/design/DAGXXA0flzo/t-gp1VLu8Vwv653pR03kxA/view?utm_content=DAGXXA0flzo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3de23407cb)
+<br>
+2. Test bench block circuit diagram
+<br>
+![image](https://www.canva.com/design/DAGXvWeu48Y/riE9m4IDqsber7L5tHB-Cw/view?utm_content=DAGXvWeu48Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha46d6e21e8)
+
 ## Raspberry Pi 5 GPIO pinout
 ---
 ![image](https://github.com/user-attachments/assets/9db1bf34-d074-4833-85bb-acb80f059bba)
