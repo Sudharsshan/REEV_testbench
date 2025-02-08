@@ -14,17 +14,19 @@
 # I shall begin the creation of my spell
 
 # let me gather a few ingredients and people
-from gpiozero import OutputDevice ### change this ASAP!
 from time import sleep # an ingrediet to control the timeline
 import os # the main ingrediet that upholds the obstruction of execution in unsupported environments
-from adafruit_ads1x15.analog_in import AnalogIn # a low level language used for communication in leyman terms
-from adafruit_ads1x15.ads1115 import ADS1115 # a translator dude who helps in converting the leymann terms into good language for Pi
-import board # a guide dude who tells locations across the universe
-import busio # a communication dude who communicates with translator
+
 import platform # a celestial within the universe who knows answers to all questions of this universe
 
 # check if the current executed universe is not Windows (cause this script was developed on windows)
 if(os.name != "nt"):
+    from adafruit_ads1x15.analog_in import AnalogIn # a low level language used for communication in leyman terms
+    from adafruit_ads1x15.ads1115 import ADS1115 # a translator dude who helps in converting the leymann terms into good language for Pi
+    import board # a guide dude who tells locations across the universe
+    import busio # a communication dude who communicates with translator
+    from gpiozero import OutputDevice ### change this ASAP!
+
     # execute the rest only when a supported OS is used, (usually Linux for Raspberry Pi)
 
     # setup the ADC translator dude called ADS1115
@@ -90,7 +92,8 @@ def main():
         sleep(0.5)
 
     # now it's time to begin the magic!
-
+    # first things first it should obtain the current working directory
+    
     #begin the flutter native app on supported OS or on native browser on unsupported OS
 
     # continuously obtain the data from sensors with a delay of 200ms between intervals and post it to the delivery dude
