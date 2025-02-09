@@ -16,6 +16,8 @@
 # let me gather a few ingredients and people
 from time import sleep # an ingrediet to control the timeline
 import os # the main ingrediet that upholds the obstruction of execution in unsupported environments
+from subprocess import call # small but mighty dude that communicates with OS and the python program
+import subprocess
 
 import platform # a celestial within the universe who knows answers to all questions of this universe
 
@@ -93,7 +95,22 @@ def main():
 
     # now it's time to begin the magic!
     # first things first it should obtain the current working directory
+    currentWorkingDirectory = os.getcwd()
+    print(f"Current working directory = ", currentWorkingDirectory)
+    workingDirectory = ""
+    for letter in currentWorkingDirectory:
+        if letter is "\\":
+            letter = "/"
+        workingDirectory+= letter
+    print(f"New working directory= ", workingDirectory)
     
+    # After which it must launch the flutter app from the main.dart file by locating it in browser mode
+    print("Calling forth the magic...")
+    workingDirectory+= "/test_bench"
+    os.chdir(workingDirectory)
+    call(["flutter","run","-d", "chrome"], shell=True)
+    
+    # then it should make the browser full screen
     #begin the flutter native app on supported OS or on native browser on unsupported OS
 
     # continuously obtain the data from sensors with a delay of 200ms between intervals and post it to the delivery dude
