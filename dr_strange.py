@@ -113,12 +113,12 @@ def main():
     
     # then it should make the browser full screen
     time.sleep(20) # wait till the chrome opens and then enter full screen within
+    # additionally optimize this timing for the launch time of chrome within linux i.e. in Raspberry Pi 5
+    
     print('Entering full-screen mode in chrome')
     pyautogui.press('f11')
     print('Succesful')
     
-    #begin the flutter native app on supported OS or on native browser on unsupported OS
-
     # continuously obtain the data from sensors with a delay of 200ms between intervals and post it to the delivery dude
 
 
