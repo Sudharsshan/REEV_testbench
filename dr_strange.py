@@ -16,8 +16,9 @@
 # let me gather a few ingredients and people
 from time import sleep # an ingrediet to control the timeline
 import os # the main ingrediet that upholds the obstruction of execution in unsupported environments
-from subprocess import call # small but mighty dude that communicates with OS and the python program
-import subprocess
+import subprocess # small but mighty dude that communicates with OS and the python program
+import pyautogui # one of the powerful magics that can replicate a keyboard inputs
+import time # to manipulate the time flow within this world
 
 import platform # a celestial within the universe who knows answers to all questions of this universe
 
@@ -108,9 +109,14 @@ def main():
     print("Calling forth the magic...")
     workingDirectory+= "/test_bench"
     os.chdir(workingDirectory)
-    call(["flutter","run","-d", "chrome"], shell=True)
+    app_thread = subprocess.Popen(["flutter","run","-d", "chrome"], shell=True)
     
     # then it should make the browser full screen
+    time.sleep(20) # wait till the chrome opens and then enter full screen within
+    print('Entering full-screen mode in chrome')
+    pyautogui.press('f11')
+    print('Succesful')
+    
     #begin the flutter native app on supported OS or on native browser on unsupported OS
 
     # continuously obtain the data from sensors with a delay of 200ms between intervals and post it to the delivery dude
